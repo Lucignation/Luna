@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Navigation from './components/navigation/Navigation';
+import Home from './containers/Home';
+import Tour from './containers/tour/Tour';
+import Music from './containers/music/Music';
+
+import Gallery from './containers/gallery/Gallery';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 
-function App() {
+const App = () => {
+  const date = new Date().getFullYear();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route exact path="/tour" component={Tour} />
+          <Route exact path="/music" component={Music} />
+          <Route exact path="/photos" component={Gallery} />
+        </Switch>
+        <p className="footer">Don Casino &copy; {date} - all rights reserved</p>
+      </Router>
     </div>
   );
 }

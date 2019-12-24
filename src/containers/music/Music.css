@@ -1,0 +1,30 @@
+.Music{
+    background-image: url('../../public//images/BG.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+    /* height: 130vh; */
+}
+.Music h1{
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 10px 10px 10px #000;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.Music hr{
+    border: 2px solid #f8ca32;
+    margin-bottom: 80px;
+}
+.card-deck{
+    /* padding: 10px; */
+    width: 70%;
+    margin: auto!important;
+}
+
+.card{
+    box-shadow: 10px 10px 10px #000;
+}

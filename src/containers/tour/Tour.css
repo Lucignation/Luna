@@ -1,0 +1,63 @@
+.Tour{
+    background-image: url('../../public/images/DONCASINO.jpeg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: 130vh; */
+    color: #fff;
+}
+
+.Tour h1{
+    text-align: center;
+    padding: 10px;
+    padding-top: 1rem;
+    text-shadow: 10px 10px 9px #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+.Tour hr{
+    border: 2px solid #f8ca32;
+    /* margin-bottom: 70px; */
+}
+
+.Tour a{
+    color: #fff;
+}
+
+.Tour a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+th{
+    color: #fff;
+}
+
+tr{
+    color: #f8ca32;
+}
+
+tr:nth-child(even){
+    color: #fff;
+    background-color: #1a1a1ace;
+}
+
+.Tour__Header{
+    display: flex;
+    justify-content: space-evenly;
+}

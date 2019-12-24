@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-image: url('./public//images/BG.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App-logo {
