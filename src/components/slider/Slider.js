@@ -9,7 +9,10 @@ import {Carousel} from 'react-bootstrap';
 const Slider = () =>{
     return(
         <div>
-            <Carousel>
+            <Carousel prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon" />}
+                nextIcon={<span aria-hidden="true" className="carousel-control-next-icon" />}
+                controls={false}
+            >
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
